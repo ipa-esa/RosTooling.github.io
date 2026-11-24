@@ -43,3 +43,14 @@ redirects = {
     "docu/IntrospectionNode": "ros2model.html",
     "docu/rossdl": "Ros2CodeGeneration.html",
 }
+
+# Link check: these links are in archived pages (docu/old) and no longer exist or
+# are not reachable from CI. The archive keeps them as they were.
+linkcheck_ignore = [
+    r"https://github\.com/CoreSenseEU/rossdl/.*",
+    r"https://raw\.githubusercontent\.com/ipa-nhg/ros-model-experiments/.*",
+    r"https://github\.com/ipa320/ros-model/tree/master/ROSCommonObjects/.*",
+    r"https://github\.com/ipa320/ros-model-extractors#.*",
+    r"https://github\.com/seronet-project/SeRoNet-Tooling-ROS-Mixed-Port/.*",
+    r"https://(web2|wiki)\.servicerobotik-ulm\.de/.*",
+]
