@@ -16,3 +16,5 @@ cd tools/screenshots && D=$PWD/work/src/robot_demo OUT=../../vscode/images node 
 ```
 
 The pages open at `http://127.0.0.1:8790/open?file=<absolute path of a model>`. The dark theme is the default of the Studio outside VS Code. Take new images when the Studio changes, and check the text of the pages against them.
+
+The same steps are available as the skill `studio-screenshots` (`.claude/skills/studio-screenshots/SKILL.md`), which also lists what went wrong before.
