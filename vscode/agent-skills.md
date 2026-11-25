@@ -2,30 +2,32 @@
 
 A skill is a set of instructions that an AI agent loads when a task needs it. The extension delivers six skills. Together they let an agent write correct RosTooling models, build the code of a system and draw it, without you explaining the languages first. The [MCP tools](mcp-and-agents.md#the-tools) are what the agent uses to change the files. The skills tell it when and how.
 
-You do not choose a tool. You describe what you want, and the agent picks the skill that fits. You can also name a skill in your request, for example "Use the `ros-model` skill to ...". Some agents offer the skills as commands too; in Claude Code they are slash commands such as `/ros-model`.
+You do not choose a tool. You describe what you want, and the agent picks the skill that fits. You can also name a skill in your request, for example "Use the `ros-model` skill to ...".
+
+The skills are not tied to one agent. The extension installs the same six skills for **Claude Code, Antigravity, Codex CLI, Cursor and Gemini CLI**. Some agents also offer a skill as a command, for example `/ros-model` in Claude Code.
 
 ## Install the skills
 
-Run **RosTooling: Install AI Agent Skills & MCP** from the Command Palette and choose the agent, see [Setting up an agent](mcp-and-agents.md#setting-up-an-agent). The skills are copied to the place where the agent looks for them:
+Run **RosTooling: Install AI Agent Skills & MCP** from the Command Palette and choose the agent, see [Setting up an agent](mcp-and-agents.md#setting-up-an-agent). The skills are copied to the place where that agent looks for them:
 
-| Agent | Where the skills go |
-| --- | --- |
-| Claude Code | `.claude/skills/` and `.claude/commands/` (for the slash commands) |
-| Antigravity, Codex CLI, Gemini CLI | `.agents/skills/` (Antigravity: `~/.gemini/config/skills/` for all workspaces) |
-| Cursor | `.cursor/rules/` |
+- **Claude Code**: `.claude/skills/`, and `.claude/commands/` for the slash commands.
+- **Antigravity**: `.agents/skills/`, or `~/.gemini/config/skills/` for all workspaces.
+- **Codex CLI**: `.agents/skills/`.
+- **Gemini CLI**: `.agents/skills/`.
+- **Cursor**: `.cursor/rules/`, where Cursor reads each skill as a rule.
 
 For the current workspace the folders are in the workspace, for all workspaces they are in your home folder. When the extension is updated, install again to get the new skills.
 
 ## The skills
 
-| Skill | Ask it to | You get |
-| --- | --- | --- |
-| [`ros-model`](#ros-model) | Model a package, a node or a system | `.ros`, `.ros2` and `.rossystem` files that pass validation |
-| [`ros-modeler`](#ros-modeler) | (Used with `ros-model`) | Fewer silent mistakes in the files |
-| [`ros-node-developer`](#ros-node-developer) | Implement the behaviour of one node | The logic of the node, in the files that generation never overwrites |
-| [`ros-system-builder`](#ros-system-builder) | Build a whole system | All custom nodes implemented in parallel, the launch package generated, the build checked |
-| [`ros-plot`](#ros-plot) | Show a system | One HTML file with the system as an interactive graph |
-| [`update-ros-catalog`](#update-ros-catalog) | Refresh the list of well-known ROS packages | An updated reference table the agent can suggest packages from |
+The agent chooses the skill from your request. What each one does is described below.
+
+- [`ros-model`](#ros-model): **model a package, a node or a system.** You get `.ros`, `.ros2` and `.rossystem` files that pass validation.
+- [`ros-modeler`](#ros-modeler): **a checklist for `ros-model`.** It prevents silent mistakes in the files.
+- [`ros-node-developer`](#ros-node-developer): **implement the behaviour of one node.** You get the logic in the files that generation never overwrites.
+- [`ros-system-builder`](#ros-system-builder): **build a whole system.** All custom nodes are implemented in parallel, the launch package is generated and the build is checked.
+- [`ros-plot`](#ros-plot): **show a system.** You get one HTML file with the system as an interactive graph.
+- [`update-ros-catalog`](#update-ros-catalog): **refresh the list of well-known ROS packages.** The agent can suggest packages from the updated table.
 
 ### ros-model
 
