@@ -10,6 +10,19 @@ The skills are not tied to one agent. The extension installs the same six skills
 
 Run **RosTooling: Install AI Agent Skills & MCP** from the Command Palette and choose the agent, see [Setting up an agent](mcp-and-agents.md#setting-up-an-agent). The skills are copied to the place where that agent looks for them:
 
+```{image} images/palette.png
+:alt: The command RosTooling: Install AI Agent Skills & MCP in the Command Palette
+:width: 70%
+```
+
+When you open a ROS workspace, the extension also offers the installation as a message with a button for each agent:
+
+```{image} images/agent-prompt.png
+:alt: The message that offers to install the skills for Claude Code, Antigravity and Cursor
+:width: 60%
+```
+
+
 - **Claude Code**: `.claude/skills/`, and `.claude/commands/` for the slash commands.
 - **Antigravity**: `.agents/skills/`, or `~/.gemini/config/skills/` for all workspaces.
 - **Codex CLI**: `.agents/skills/`.

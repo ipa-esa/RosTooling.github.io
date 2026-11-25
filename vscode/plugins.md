@@ -8,7 +8,12 @@ RosTooling can be extended with plugins: Java libraries that add blocks, checks 
 
 ## The RosTooling Plugins view
 
-In a workspace with RosTooling files, the Explorer has a view named **RosTooling Plugins**. It lists the plugin JARs that the extension found, with the id, the version and the summary of each, and its state: enabled, disabled, waiting for approval, or with a load error. The toolbar of the view has **Refresh Plugins** and **Manage Plugins…**. The context menu and the buttons of a plugin have these actions:
+```{image} images/plugins-view.png
+:alt: The RosTooling Plugins view in the Explorer, here without any plugin found
+:width: 50%
+```
+
+The picture shows the view in a workspace without plugins. In a workspace with RosTooling files, the Explorer has a view named **RosTooling Plugins**. It lists the plugin JARs that the extension found, with the id, the version and the summary of each, and its state: enabled, disabled, waiting for approval, or with a load error. The toolbar of the view has **Refresh Plugins** and **Manage Plugins…**. The context menu and the buttons of a plugin have these actions:
 
 | Action | Command | What it does |
 | --- | --- | --- |

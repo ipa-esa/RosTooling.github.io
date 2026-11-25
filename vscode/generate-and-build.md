@@ -4,7 +4,13 @@ The extension generates ROS 2 code from your models and can build it. This page 
 
 ## Generate the nodes of a package
 
-For a `.ros2` model, right-click the file in the Explorer or in the editor and choose **Generate ROS 2 Node Wrappers** (the command `ros2.generateWrappers`). In the Studio, the Component view has **Generate Wrappers** in its toolbar and **Generate ROS 2 Wrappers** at the bottom of its left side.
+For a `.ros2` model, right-click the file in the Explorer, or right-click in the open editor, and choose **Generate ROS 2 Node Wrappers** (the command `ros2.generateWrappers`). The entry is the last one in the menu.
+
+```{image} images/explorer-menu-ros2.png
+:alt: The Explorer menu of a .ros2 file with Generate ROS 2 Node Wrappers at the bottom
+:width: 60%
+```
+ In the Studio, the Component view has **Generate Wrappers** in its toolbar and **Generate ROS 2 Wrappers** at the bottom of its left side.
 
 1. The extension saves the file if it has unsaved changes.
 2. You choose the language. For a package with one node it is **C++** or **Python**. For a package with several nodes it is **All C++**, **All Python**, or **Configure per node…**, which asks for the language of each node. A package can have nodes in both languages.
@@ -16,7 +22,13 @@ A node is implemented in one language. If you generate a node again in the other
 
 ## Generate the package of a system
 
-For a `.rossystem` model, use **Generate ROS 2 Package** in the toolbar of the Studio, or right-click the file and choose **Generate ROS2 Package** (the command `rossystem.triggerCodeGeneration`).
+For a `.rossystem` model, use **Generate ROS 2 Package** in the toolbar of the Studio, or open the file as text, right-click in the editor and choose **Generate ROS2 Package** (the command `rossystem.triggerCodeGeneration`). The entry is not in the menu of the Explorer, only in the menu of the editor.
+
+```{image} images/editor-menu.png
+:alt: The editor menu of a .rossystem file with Build ROS 2 Package, Open in RosTooling Visual Studio and Generate ROS2 Package
+:width: 50%
+```
+
 
 The extension saves the file, validates the model, and writes the package with the launch file, the parameter files, the README and the diagram to `src-gen/<system>/`. If the model has errors, nothing is written and the errors are shown.
 

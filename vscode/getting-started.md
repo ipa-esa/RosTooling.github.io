@@ -35,7 +35,7 @@ The pill in the toolbar shows **Valid**, or the number of errors and warnings. C
 
 ## 4. Generate the package
 
-Click **Generate ROS 2 Package** in the toolbar of the Studio, or right-click a `.rossystem` file and choose **Generate ROS2 Package**. The package with the launch file is written to `src-gen/` in your workspace. For the nodes of a `.ros2` model, right-click the file and choose **Generate ROS 2 Node Wrappers**. See [Generate and build](generate-and-build.md).
+Click **Generate ROS 2 Package** in the toolbar of the Studio, or open the file as text, right-click in the editor and choose **Generate ROS2 Package**. The package with the launch file is written to `src-gen/` in your workspace. For the nodes of a `.ros2` model, right-click the file and choose **Generate ROS 2 Node Wrappers**. See [Generate and build](generate-and-build.md).
 
 ## 5. Build and run
 

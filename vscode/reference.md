@@ -2,14 +2,20 @@
 
 ## Commands
 
-All commands are in the Command Palette (`Ctrl+Shift+P`). Some are also in the context menu of a file or in a view.
+All commands are in the Command Palette (`Ctrl+Shift+P`). Type `RosTooling:` to list those of the extension. Some are also in the context menu of a file or in a view.
+
+```{image} images/palette.png
+:alt: The Command Palette with the RosTooling commands
+:width: 70%
+```
+
 
 | Command | Title | Where | What it does |
 | --- | --- | --- | --- |
 | `rostooling.openVisualStudio` | RosTooling: Open in RosTooling Visual Studio | file menus, editor title bar | Opens the file in [RosTooling Studio](studio.md). |
 | `rossystem.triggerCodeGeneration` | ROSSYSTEM: Generate ROS2 Package | `.rossystem` editor, Studio | [Generates the package](generate-and-build.md#generate-the-package-of-a-system) of a system. |
 | `ros2.generateWrappers` | ROS2: Generate ROS 2 Node Wrappers | `.ros2` editor and Explorer | [Generates the node code](generate-and-build.md#generate-the-nodes-of-a-package) of a package. |
-| `rossdl.buildPackage` | ROSSDL: Build ROS 2 Package | Command Palette | An older command, [archived](../docu/old/RossdlBuildCommand.md). Build with `colcon` in a terminal, see [Build](generate-and-build.md#build). |
+| `rossdl.buildPackage` | ROSSDL: Build ROS 2 Package | editor menu | An older command, [archived](../docu/old/RossdlBuildCommand.md). Build with `colcon` in a terminal, see [Build](generate-and-build.md#build). |
 | `rostooling.installAgentSkills` | RosTooling: Install AI Agent Skills & MCP | Command Palette | Sets up [agents](mcp-and-agents.md#setting-up-an-agent). |
 | `rostooling.selectServerJar` | RosTooling: Select Language Server JAR… | Command Palette | Chooses the language server JAR: the bundled one or your own. |
 | `rostooling.managePlugins` | RosTooling: Manage Plugins… | Command Palette, Plugins view | Enables and disables [plugins](plugins.md). |

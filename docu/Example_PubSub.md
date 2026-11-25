@@ -113,7 +113,7 @@ The publisher needs something to trigger it. In `pub_node_logic.py`, the node ha
 
 ## 5. Generate the package of the system
 
-Right-click `my_system.rossystem` and choose **Generate ROS2 Package**. The package `my_system` with the launch file is written to `src-gen/my_system/`. Its launch file starts both executables:
+Open `my_system.rossystem` as text, right-click in the editor and choose **Generate ROS2 Package**, or click **Generate ROS 2 Package** in the toolbar of the Studio. The package `my_system` with the launch file is written to `src-gen/my_system/`. Its launch file starts both executables:
 
 ```python
   publisher = Node(

@@ -10,6 +10,12 @@ An agent does not edit the text of a model. It calls tools such as "add a node t
 
 The command **RosTooling: Install AI Agent Skills & MCP** sets up one or all of these agents: Claude Code, Antigravity, Codex CLI, Cursor and Gemini CLI. You choose the agent and whether the setup is for the current workspace or for all workspaces. It installs
 
+```{image} images/palette.png
+:alt: The Command Palette listing the RosTooling commands, among them Install AI Agent Skills & MCP
+:width: 70%
+```
+
+
 - the **skills** of RosTooling, instructions for writing models, building systems and implementing nodes that the agent loads when it needs them,
 - the **MCP configuration**, so that the agent starts `rostooling-mcp`,
 - the **hooks** that check a model after the agent has written it, for the agents that support hooks.

@@ -151,7 +151,7 @@ A plugin that does not implement the base of its slot, or a slot that takes one 
 
 ## 4. Generate the code
 
-Right-click `demo_planners.ros2` and choose **Generate ROS 2 Node Wrappers**, then **C++**. Do the same for `demo_planner_server.ros2`. The code is written to `src-gen/`. For the plugins you get:
+Right-click `demo_planners.ros2` in the Explorer and choose **Generate ROS 2 Node Wrappers**, then **C++**. Do the same for `demo_planner_server.ros2`. The code is written to `src-gen/`. For the plugins you get:
 
 ```text
 src-gen/demo_planners/
@@ -167,7 +167,7 @@ src-gen/demo_planners/
 
 For the node, the usual wrapper and runner are generated and, written once, `PlannerServerAlgorithm.hpp` for your logic. The wrapper declares the parameters `planner_plugin` and `critic_plugins`, loads the plugins that they name with a pluginlib class loader when the node starts, and hands them to your logic. See [ROS 2 code generation](Ros2CodeGeneration.md).
 
-Then right-click `demo_system.rossystem` and choose **Generate ROS2 Package**. That writes the package `demo_system` with the launch file.
+Then open `demo_system.rossystem` as text, right-click in the editor and choose **Generate ROS2 Package** (or use the button in the toolbar of the Studio). That writes the package `demo_system` with the launch file.
 
 ## 5. Write the logic
 

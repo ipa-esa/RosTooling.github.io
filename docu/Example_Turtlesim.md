@@ -92,7 +92,7 @@ The `from:` entries refer to the nodes of `turtlesim.ros2`, in the form `<packag
 
 ## 3. Generate and launch
 
-Right-click `turtlesim_system.rossystem` and choose **Generate ROS2 Package**. The package `turtlesim_system` is written to `src-gen/`. Its launch file starts both nodes and connects them with a remapping of the topic of both to the label of the connection:
+Open `turtlesim_system.rossystem` as text, right-click in the editor and choose **Generate ROS2 Package**, or click **Generate ROS 2 Package** in the toolbar of the Studio. The package `turtlesim_system` is written to `src-gen/`. Its launch file starts both nodes and connects them with a remapping of the topic of both to the label of the connection:
 
 ```python
   turtlesim = Node(

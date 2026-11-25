@@ -19,6 +19,13 @@ Every RosTooling file opens as text in a normal VS Code editor. The extension ad
 - **Hover text.** Hovering over an element shows information about it. For `@` blocks it shows the help text of the plugin that provides them.
 - **Navigation.** `Ctrl` + click on a reference, such as an interface in a connection of a system, goes to its definition, also across files.
 
+```{image} images/problems.png
+:alt: A reference that cannot be resolved is underlined in the editor and listed in the Problems view
+:width: 100%
+```
+
+In the picture the connection names an interface `scan_in` that the node does not have. The Problems view gives the message and the position, and a click on it goes to the place.
+
 A reference to an interface of a node in a subsystem is written `<subsystem>::<node>::<interface>`, and the editor resolves it in the same way.
 
 ## Types that are not found
@@ -27,7 +34,14 @@ When a `type:` refers to a message that RosTooling does not know, the message of
 
 ## Opening a file in the diagram
 
-A file opens as text. To see the same file as a diagram, right-click it and choose **Open in RosTooling Visual Studio**, or use the graph icon in the editor title bar. Every change in the diagram is written to the text, and a change that you make in the text appears in the diagram, so you can switch between the two at any time. See [RosTooling Studio](studio.md).
+A file opens as text. To see the same file as a diagram, right-click it and choose **Open in RosTooling Visual Studio**, or use the graph icon in the editor title bar.
+
+```{image} images/explorer-menu-rossystem.png
+:alt: The Explorer menu of a .rossystem file, with Open in RosTooling Visual Studio at the top
+:width: 60%
+```
+
+ Every change in the diagram is written to the text, and a change that you make in the text appears in the diagram, so you can switch between the two at any time. See [RosTooling Studio](studio.md).
 
 ## Server and Java
 
