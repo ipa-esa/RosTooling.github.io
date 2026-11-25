@@ -3,7 +3,7 @@ orphan: true
 ---
 
 :::{warning}
-This page is archived. It was replaced by [Extract models using static code analysis](../StaticCodeAnalyis.md).
+This page is archived. It was replaced by [Model an existing package with an agent](../Tutorial_AgentModelling.md).
 :::
 
 :bangbang::bangbang::bangbang::bangbang: This tutorial is only working for previous versions of the RosTooling (v2)

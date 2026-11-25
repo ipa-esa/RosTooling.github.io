@@ -39,7 +39,8 @@ html_theme_options = {
 # keeps its address by redirecting to the page that replaced it.
 redirects = {
     "docu/CreateYourModel": "LearnRosModels.html",
-    "docu/NewRosModel": "StaticCodeAnalyis.html",
+    "docu/NewRosModel": "Tutorial_AgentModelling.html",
+    "docu/StaticCodeAnalyis": "Tutorial_AgentModelling.html",
     "docu/IntrospectionNode": "ros2model.html",
     "docu/rossdl": "Ros2CodeGeneration.html",
 }

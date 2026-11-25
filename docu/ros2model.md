@@ -2,7 +2,7 @@
 
 This tutorial requires a local ROS installation.
 
-For the auto-generation of models another strategy, parallel to [static code analysis techniques](StaticCodeAnalyis.md) is the introspection of a running system.
+For the auto-generation of models another strategy, parallel to [modelling with an agent](Tutorial_AgentModelling.md) is the introspection of a running system.
 
 The tool [ros2model](https://github.com/ipa320/ros2model) was created for that purpose. It can be installed as every common ROS 2 package by:
 

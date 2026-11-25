@@ -4,7 +4,7 @@ The RosTooling extension for Visual Studio Code brings the RosTooling languages 
 
 - **Language support** for the four file types: highlighting, completion, validation while you type, hover text and navigation, from the same language server that all RosTooling tools use. See [Editing models](editing-models.md).
 - **RosTooling Studio**, a diagram editor for the same files: the architecture of a system as a graph, the nodes of a package as cards, and the message types as schemas. Every change in the diagram is written to the text file. See [RosTooling Studio](studio.md).
-- **Generation and agent tools**: generate ROS 2 packages from the models, build them, and let AI agents author models through an MCP server. See [Generate and build](generate-and-build.md) and [MCP server and agent skills](mcp-and-agents.md).
+- **Generation and agent tools**: generate ROS 2 packages from the models, build them, and let AI agents author models through an MCP server. See [Generate and build](generate-and-build.md), [Agent skills](agent-skills.md) and [MCP server and agent skills](mcp-and-agents.md).
 
 ## Requirements
 

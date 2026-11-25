@@ -6,7 +6,7 @@ One of the first ROS tutorials is turtlesim, a small window with a turtle that m
 
 ## 1. Model the nodes
 
-Both nodes are in the package `turtlesim` of the repository [ros_tutorials](https://github.com/ros/ros_tutorials). A model of an existing node describes what the node offers. You can write it by hand from the documentation of the node, as here, or extract it from the code, see [Static code analysis](StaticCodeAnalyis.md).
+Both nodes are in the package `turtlesim` of the repository [ros_tutorials](https://github.com/ros/ros_tutorials). A model of an existing node describes what the node offers. You can write it by hand from the documentation of the node, as here, or let an agent create it from the code, see [Model an existing package with an agent](Tutorial_AgentModelling.md).
 
 Create a folder, open it in VS Code and create `turtlesim.ros2`:
 
