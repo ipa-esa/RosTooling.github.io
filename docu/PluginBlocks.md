@@ -103,6 +103,6 @@ A block of a plugin that is not enabled is only a warning, "Unknown extension bl
 
 ## Editing blocks
 
-- In the **editor**, the plugin's schema provides completion, hover text and the validation of the entries.
+- In the **editor**, the plugin's schema is used to validate the entries. The schema also carries hints for completion and hover text, which an editor can use. The VS Code extension does not show them yet.
 - In the **diagram**, the inspector of an element lists its blocks. Each field has a label, help text and, where the plugin suggests values, a list of choices; you can type another value. The inspector also offers the blocks that the active plugins provide for that kind of element.
 - An **AI agent** edits blocks with the MCP tools `ros_get_extension_block` and `ros_set_extension_block`. A plugin can add tools of its own, such as one that adds a complete BehaviorTree leaf.

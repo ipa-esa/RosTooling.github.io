@@ -14,9 +14,9 @@ Every RosTooling file opens as text in a normal VS Code editor. The extension ad
 ## Features
 
 - **Highlighting.** Keywords, names, types, values and `@` blocks have their own colours, and brackets are matched.
-- **Completion.** `Ctrl+Space` offers what fits at the cursor: keywords, packages, artifacts, interfaces, parameters, and the message, service and action types of the workspace and the [catalogue](catalogue.md). In an `@` block of a [plugin](plugins.md) it offers the entries of the block and the choices that the plugin suggests.
+- **Completion.** Completion is limited today. The language server offers only the next syntax element, such as `node:`, `{` or `@`. It does not yet offer packages, interfaces or the message, service and action types of the workspace and the [catalogue](catalogue.md). Write those names in full, or choose them in the [Studio](studio.md), where the interface buttons of the component view and **Browse ROS Types** show the types that you can use. VS Code adds a suggestion list of words that are already in the file, which is not from RosTooling.
 - **Validation.** Errors and warnings are underlined while you type and listed in the Problems view. Hover over an underline for the message. [Validation and diagnostics](../docu/Validation.md) lists what is checked.
-- **Hover text.** Hovering over an element shows information about it. For `@` blocks it shows the help text of the plugin that provides them.
+- **Hover text.** Hovering over an underline shows the message of the error or warning. Hover text for the elements of a model, such as the description of a keyword or a type, is not provided yet.
 - **Navigation.** `Ctrl` + click on a reference, such as an interface in a connection of a system, goes to its definition, also across files.
 
 ```{image} images/problems.png

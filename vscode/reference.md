@@ -47,7 +47,7 @@ The extension writes what it does to the output channel **ROS LSP** (View → Ou
 
 **The extension says Java is missing or too old.** The language server needs Java 21 or later. The check of the extension only tests for a lower version, but the server itself does not start with an older one. Install a JDK 21 and set `rostooling-languages.java.home` to its folder, or make it the Java of your system, then reload the window.
 
-**There are no diagnostics, completion or hover.** The language server is not running. Open the **ROS LSP** output channel to see why, for example a wrong Java. A custom JAR in `rostooling-languages.server.jarPath` that does not exist or is not a RosTooling language server causes the same. Clear the setting, or choose the bundled JAR with **RosTooling: Select Language Server JAR…**.
+**There are no diagnostics or navigation.** The language server is not running. Open the **ROS LSP** output channel to see why, for example a wrong Java. A custom JAR in `rostooling-languages.server.jarPath` that does not exist or is not a RosTooling language server causes the same. Clear the setting, or choose the bundled JAR with **RosTooling: Select Language Server JAR…**.
 
 **Types such as `std_msgs/msg/String` are not found.** The catalogue is missing. The first download needs access to GitHub. Click **Sync Catalogue** in the Studio, see [Catalogue](catalogue.md), and check the output channel for errors.
 

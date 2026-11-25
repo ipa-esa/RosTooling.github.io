@@ -1,6 +1,6 @@
 # Review package models
 
-In this tutorial you write a small package model, `.ros2`, and meet the help that the editor gives: the naming rules, the error for a type that does not exist, completion, and what happens with a grammar error. It takes about 15 minutes.
+In this tutorial you write a small package model, `.ros2`, and meet the help that the editor gives: the naming rules, the error for a type that does not exist, and what happens with a grammar error. It takes about 15 minutes.
 
 **What you need:** the [VS Code extension](../vscode/overview.md). The message types come from the [catalogue](../vscode/catalogue.md), which the extension downloads when it starts. If you use Eclipse, the same models and messages apply; the tabs below show the differences.
 
@@ -50,7 +50,7 @@ my_component:
 
 The error is "Couldn't resolve reference to TopicSpec 'my_msgs_package/msg/String'": the type is not defined anywhere that RosTooling can see. The message also names two ways to fix it, to add the project that defines the type or to generate a `.ros` model for it, see [Communication objects](NewCommunicationObjects.md).
 
-To use an existing type, delete the text between the quotes and press `Ctrl+Space`. The editor lists the types of the catalogue. Choose `std_msgs/msg/String` and the error disappears. To see where a type is defined, put the cursor on it and use **Go to Definition** (`F12`, in Eclipse `F2`).
+To use an existing type, replace the text between the quotes by its full name, `std_msgs/msg/String`, and the error disappears. In Eclipse, press `Ctrl+Space` between the quotes to list the types of the catalogue. In VS Code the language server does not offer the types yet, the Studio lists them under **Browse ROS Types** in its component view. To see where a type is defined, put the cursor on it and use **Go to Definition** (`F12`, in Eclipse `F2`).
 
 ## 4. A grammar error
 
@@ -69,7 +69,7 @@ my_component:
         my_bool:
 ```
 
-This time the messages are more technical: the parser reports "no viable alternative at input" and says that "The required feature 'type' of 'ParameterImpl' must be set". They mean that a parameter needs a type. Add it under `my_bool` and use `Ctrl+Space` to see the choices:
+This time the messages are more technical: the parser reports "no viable alternative at input" and says that "The required feature 'type' of 'ParameterImpl' must be set". They mean that a parameter needs a type. Add it under `my_bool`. The types are `Boolean`, `Integer`, `Double`, `String`, `Base64` and `List [...]`, see [Parameters](ParametersAPI.md):
 
 <!-- check: group=final file=my_first_package.ros2 -->
 ```text

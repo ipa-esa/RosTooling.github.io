@@ -52,7 +52,7 @@ awesome2_pkg:
 
 ::::{tab-set}
 :::{tab-item} VS Code
-Create a file named `my_awesome_system.rossystem` in the same folder. The first line of the file is the name of the system, followed by a colon. On the next line, indent, and press `Ctrl+Space` to see what is allowed.
+Create a file named `my_awesome_system.rossystem` in the same folder. The first line of the file is the name of the system, followed by a colon. On the next line, indent and write `nodes:`. The entries of the page [System language](RosSystemModelDescription.md) show what is allowed.
 :::
 :::{tab-item} Eclipse
 Use **File → New → Other → General → File**, and give the file the extension `.rossystem`.

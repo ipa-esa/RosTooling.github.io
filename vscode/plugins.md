@@ -38,7 +38,7 @@ The settings of a workspace that you have not trusted in VS Code are ignored.
 
 ## What a plugin changes in the editor
 
-- In the text editor, the blocks of a plugin, `@<name>:`, are highlighted, completed and checked.
+- In the text editor, the blocks of a plugin, `@<name>:`, are highlighted and checked.
 - In the diagram, an element that has a block of a plugin, or a plugin base that uses a loader of a plugin, shows a badge with the name of the plugin. The inspector lists the blocks with their fields, and offers the blocks that the active plugins provide for that kind of element.
 - In the MCP server, the tools of the plugin are added, see [MCP server and agent skills](mcp-and-agents.md).
 - In the generated package, the files of the plugin appear in the folders that are named after it, and the notices of the plugin are shown as messages.

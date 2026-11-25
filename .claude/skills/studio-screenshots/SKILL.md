@@ -71,5 +71,5 @@ Notes:
 - The Problems view lists the catalogue files that the extension caches in the temporary user folder, with long paths. Type the name of your file into its filter box before the screenshot.
 - Close the Chat side bar and clear notifications first (`View: Toggle Secondary Side Bar Visibility`), unless the notification is the subject.
 - The window opens on the display of the user. Stop it with its pids when you are done (`ps -eo pid,args | awk '/\.vscode-test\/vscode-linux-x64/ && !/awk|bash/ {print $1}'`), not with `pkill -f`.
-- Completion and hover pop-ups did not appear when triggered this way, so there are no images of them.
+- There are no images of completion or hover pop-ups because the language server does not provide them: asked directly over LSP it returns only syntax tokens (`node:`, `{`, `@`) and an empty hover text, with every JAR that was tested. VS Code's own word suggestions (grey `abc` icons) are not RosTooling.
 - Check menus against `package.json` of the extension (`contributes.menus`). They are different in the Explorer and in the editor.
