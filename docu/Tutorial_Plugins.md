@@ -113,6 +113,18 @@ demo_planners:
           implements: demo_core.Critic
 ```
 
+The Studio shows the plugin package as a list of plugin libraries, each plugin with the base that it implements, and the node with its two slots:
+
+```{image} images/plugins-package.png
+:alt: The package demo_planners in RosTooling Studio: two libraries with two plugins each
+:width: 100%
+```
+
+```{image} images/plugins-node.png
+:alt: The node planner_server in RosTooling Studio with its two plugin slots
+:width: 100%
+```
+
 ## 3. The system
 
 The system chooses the plugins for the slots of the node. Create `demo_system.rossystem`:
@@ -128,7 +140,14 @@ demo_system:
         critics: [demo_planners.AlignCritic, demo_planners.GoalCritic]
 ```
 
-References between packages are written `<package>.<name>`. Open the files in the Studio, or look at the Problems view: a plugin that does not implement the base of its slot, or a slot that takes one plugin but gets two, is reported, see [Validation](Validation.md).
+References between packages are written `<package>.<name>`. In the Studio, select the node to see the plugins attached to each slot, and change them there:
+
+```{image} images/plugins-system.png
+:alt: The system demo_system in RosTooling Studio: the inspector shows the plugins of each slot
+:width: 100%
+```
+
+A plugin that does not implement the base of its slot, or a slot that takes one plugin but gets two, is reported in the Studio and in the Problems view, see [Validation](Validation.md).
 
 ## 4. Generate the code
 

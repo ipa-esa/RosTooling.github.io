@@ -89,7 +89,13 @@ scan_filter:
 
 The file starts with comments that say how many items the extractor could not read. Here it is none, because every call in the code is literal. If the code builds a topic name from a variable, the draft lists it as a flag instead of guessing. The agent then looks for the value in the code, or asks you.
 
-Open the file in [RosTooling Studio](../vscode/studio.md) to see the node with its ports and parameters, and check that it is what you expect. The model is a draft that you review: the agent only knows what the code states.
+Open the file in [RosTooling Studio](../vscode/studio.md) to see the node with its ports and parameters, and check that it is what you expect.
+
+```{image} images/agent-scan-filter.png
+:alt: The model scan_filter in RosTooling Studio: one subscriber, one publisher and one service server
+:width: 100%
+```
+ The model is a draft that you review: the agent only knows what the code states.
 
 ## 4. Add a node that does not exist yet
 
@@ -132,7 +138,13 @@ scan_system:
     - [ "lidar::scan" , "filter::scan" ]
 ```
 
-Open it in the Studio. The same connection is drawn as a wire between the two nodes, and the pill shows **Valid**. If the agent proposes a connection that you do not want, say so, or remove the wire in the Studio. See [Auto-connect](../vscode/auto-connect.md) for how candidates are ranked.
+Open it in the Studio. The same connection is drawn as a wire between the two nodes, and the pill shows **Valid**.
+
+```{image} images/agent-scan-system.png
+:alt: The system scan_system in RosTooling Studio: lidar connected to filter
+:width: 100%
+```
+ If the agent proposes a connection that you do not want, say so, or remove the wire in the Studio. See [Auto-connect](../vscode/auto-connect.md) for how candidates are ranked.
 
 ```{note}
 In `from:`, the part after the dot is the name of the **node** in the package model, not the name of the artifact. For `scan_filter` the artifact is `scan_filter_node` and the node is `scan_filter`. The agent knows this rule. If you edit by hand, see [Systems](RosSystemModelDescription.md).
