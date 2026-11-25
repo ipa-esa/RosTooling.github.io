@@ -2,7 +2,7 @@
 
 A skill is a set of instructions that an AI agent loads when a task needs it. The extension delivers six skills. Together they let an agent write correct RosTooling models, build the code of a system and draw it, without you explaining the languages first. The [MCP tools](mcp-and-agents.md#the-tools) are what the agent uses to change the files. The skills tell it when and how.
 
-You do not choose a tool. You describe what you want, and the agent picks the skill that fits. In Claude Code every skill is also a slash command, such as `/ros-model`.
+You do not choose a tool. You describe what you want, and the agent picks the skill that fits. You can also name a skill in your request, for example "Use the `ros-model` skill to ...". Some agents offer the skills as commands too; in Claude Code they are slash commands such as `/ros-model`.
 
 ## Install the skills
 
@@ -44,7 +44,7 @@ Examples of what to say:
 
 > Create a system `patrol` with the nodes `nav2_amcl.amcl` and `my_planner.planner`, and connect what fits.
 
-In Claude Code: `/ros-model src/scan_filter`.
+Or name the skill: "Use the `ros-model` skill on `src/scan_filter`."
 
 ### ros-modeler
 

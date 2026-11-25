@@ -8,11 +8,11 @@ Most ROS code was written without a model. Instead of writing the model by hand,
 This replaces the earlier tutorial about static code analysis with HAROS in a Docker container. That extractor does not work for current distributions and its page is [archived](old/StaticCodeAnalyis.md).
 ```
 
-**What you need:** the [VS Code extension](../vscode/overview.md), and an AI agent that supports MCP and skills: Claude Code, Antigravity, Codex CLI, Cursor or Gemini CLI. The examples use Claude Code. Python 3 is needed by the extractors. For C++ packages they also need `pip install tree_sitter tree_sitter_cpp`; without it C++ packages are skipped and the agent reads them itself.
+**What you need:** the [VS Code extension](../vscode/overview.md), and an AI agent from the list that the extension sets up: Claude Code, Antigravity, Codex CLI, Cursor or Gemini CLI. The skills and the tools are the same for all of them, and the tutorial works with each. Python 3 is needed by the extractors. For C++ packages they also need `pip install tree_sitter tree_sitter_cpp`; without it C++ packages are skipped and the agent reads them itself.
 
 ## 1. Set up the agent
 
-Open an empty folder in VS Code. Run **RosTooling: Install AI Agent Skills & MCP** from the Command Palette, choose your agent and **current workspace**. This installs the skills and the MCP configuration, see [Agent skills](../vscode/agent-skills.md#install-the-skills). Start the agent in the folder, for Claude Code with `claude` in a terminal. If the agent was running during the installation, restart it so that it loads the skills.
+Open an empty folder in VS Code. Run **RosTooling: Install AI Agent Skills & MCP** from the Command Palette, choose your agent and **current workspace**. This installs the skills and the MCP configuration, see [Agent skills](../vscode/agent-skills.md#install-the-skills). Start your agent in the folder, in its terminal or its panel in the editor. If the agent was running during the installation, restart it so that it loads the skills and the MCP server.
 
 ## 2. The package to model
 
@@ -56,7 +56,7 @@ Tell the agent what you want, in your own words:
 
 > Model the ROS 2 package in `src/scan_filter`.
 
-In Claude Code you can use the skill directly: `/ros-model src/scan_filter`.
+The agent finds the right skill from your request. You can also name it: "Use the `ros-model` skill to model the package in `src/scan_filter`." Some agents offer the skill as a command as well, for example `/ros-model src/scan_filter` in Claude Code.
 
 The agent first runs the extractor of the skill on the package. The extractor reads every publisher, subscriber, service, action and parameter whose name and type are written literally in the code, and writes a draft. Then the agent validates the file with `validate_ros_model`. You find `rosnodes/scan_filter.ros2`:
 
