@@ -44,7 +44,7 @@ RosTooling describes ROS in three layers of models. Each has its own file type, 
 | --- | --- |
 | Generate code from a model | [Code generation](docu/Ros2CodeGeneration.md), [target distributions](docu/TargetDistributions.md) |
 | Extend the generators with my own blocks (Preview) | [Plugin concepts](docu/PluginConcepts.md) |
-| Create models from existing code | [Static code analysis](docu/StaticCodeAnalyis.md), [introspection](docu/ros2model.md) |
+| Create models from existing code | [With an agent](docu/Tutorial_AgentModelling.md), [introspection of a running system](docu/ros2model.md) |
 | Use RosTooling from another editor or tool | [LSP commands](docu/LspCommands.md), [diagram server](docu/GlspServer.md) |
 | Understand how the parts fit | [Architecture overview](docu/Architecture.md) |
 | Fix a problem | [Known issues](docu/RosTooling_issues.md) |
@@ -109,7 +109,7 @@ docu/GlspServer
 :hidden:
 :caption: Models from code
 
-docu/StaticCodeAnalyis
+docu/Tutorial_AgentModelling
 docu/ros2model
 ```
 
@@ -161,6 +161,7 @@ vscode/auto-connect
 vscode/generate-and-build
 vscode/catalogue
 vscode/plugins
+vscode/agent-skills
 vscode/mcp-and-agents
 vscode/reference
 ```

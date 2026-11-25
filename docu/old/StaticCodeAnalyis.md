@@ -1,4 +1,12 @@
-# Extract models using static code analysis [![](images/docker_logo.png)]
+---
+orphan: true
+---
+
+:::{warning}
+This page is archived. The extractor that it describes, based on HAROS in a Docker container, no longer works for current ROS 2 distributions. Models of existing code are now created with an AI agent and the skills of the extension, see [Model an existing package with an agent](../Tutorial_AgentModelling.md).
+:::
+
+# Extract models using static code analysis [![](../images/docker_logo.png)]
 
 This tutorial requires the [Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) installation. 
 
@@ -67,7 +75,7 @@ cpp_basic:
 
 If you copy the output in a .ros2 file on the RosTooling the models and their attributes will be parsed and interpreted. For simplification, both artifacts can also be merged into a single file.
 
-![alt text](images/importHAROSOutput.png)
+![alt text](../images/importHAROSOutput.png)
 
 Another nice example to test is the [aruco_ros](https://github.com/pal-robotics/aruco_ros) package, its corresponding command is:
 
@@ -75,8 +83,8 @@ Another nice example to test is the [aruco_ros](https://github.com/pal-robotics/
 [sudo] docker run -it haros_humble:latest /haros_runner.sh aruco_ros --all node . /home/extractor/ws "https://github.com/pal-robotics/aruco_ros"
 ```
 
-![](images/Attention.png) This is a very basic example. The extraction technologies have a huge potential, unfortunately since the ROS 2 Humble distro the extractor works only for simple Cpp code. Unfortunately, some changes on the colcon build infrastructure and how it calls the clang compiler broke our extraction tools. With ROS (1) and previous ROS 2 distros we reached a 70% of efficiency.
+![](../images/Attention.png) This is a very basic example. The extraction technologies have a huge potential, unfortunately since the ROS 2 Humble distro the extractor works only for simple Cpp code. Unfortunately, some changes on the colcon build infrastructure and how it calls the clang compiler broke our extraction tools. With ROS (1) and previous ROS 2 distros we reached a 70% of efficiency.
 
-We are looking for help and collaboration to fix the current issues we are facing. If you are interested please contact Eshan Savla ([eshan.savla@ipa.fraunhofer.de](mailto:eshan.savla@ipa.fraunhofer.de)). THANKS!! :)
+We are looking for help and collaboration to fix the current issues we are facing. If you are interested please contact the maintainers. THANKS!! :)
 
 Many of the models you will see during the rest of the tutorials were auto-generated using this method.

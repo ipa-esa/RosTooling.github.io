@@ -52,4 +52,4 @@ Then start the system:
 ros2 launch <system> <system>.launch.py
 ```
 
-The next pages describe each part: [Editing models](editing-models.md), [RosTooling Studio](studio.md), [Auto-connect](auto-connect.md), [Generate and build](generate-and-build.md), [Catalogue](catalogue.md), [Plugins](plugins.md), [MCP server and agent skills](mcp-and-agents.md) and the [reference](reference.md).
+The next pages describe each part: [Editing models](editing-models.md), [RosTooling Studio](studio.md), [Auto-connect](auto-connect.md), [Generate and build](generate-and-build.md), [Catalogue](catalogue.md), [Plugins](plugins.md), [Agent skills](agent-skills.md), [MCP server](mcp-and-agents.md) and the [reference](reference.md).

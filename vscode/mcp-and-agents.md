@@ -1,5 +1,7 @@
 # MCP server and agent skills
 
+This page is about the server and its tools. For what the skills do and what to ask the agent, see [Agent skills](agent-skills.md). For a worked example, see [Model an existing package with an agent](../docu/Tutorial_AgentModelling.md).
+
 The extension includes a server for the Model Context Protocol (MCP), `rostooling-mcp`, with which AI coding agents can read, write, check and generate RosTooling models. It uses the same language server and diagram server as VS Code, so an agent gets the same validation and the same edits as you, and it works without a running VS Code.
 
 An agent does not edit the text of a model. It calls tools such as "add a node to this system" or "connect these two interfaces", the tools change the model through the model server and report the result and the diagnostics. The positions of the diagram are not part of the calls: the diagram is laid out automatically.
