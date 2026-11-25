@@ -25,7 +25,7 @@ The languages, the validation and the generators behind every client, and how to
 ## Start
 
 - [Install](docu/Installation.md) the extension and [try the whole path once](vscode/getting-started.md): open a system, connect nodes, generate a package, build it.
-- Learn by [tutorials](docu/LearnRosModels.md): first models, a system, a publisher and subscriber, turtlesim and a mobile base.
+- Learn by [tutorials](docu/LearnRosModels.md): first models, a system, a publisher and subscriber, ROS 2 plugins, turtlesim and a mobile base.
 - See [What's new in 2026](docu/WhatsNew.md) if you know an earlier version.
 
 ## The model layers
@@ -128,6 +128,7 @@ docu/LearnRosModels
 docu/LearnRosSystemModels
 docu/LearnRosSystemModels2
 docu/Example_PubSub
+docu/Tutorial_Plugins
 docu/Example_Turtlesim
 docu/MobileBase_beginner
 ```

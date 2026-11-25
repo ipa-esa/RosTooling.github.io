@@ -11,6 +11,8 @@ The word *plugin* has two meanings in RosTooling, and this section covers both.
 | **A plugin in a model** | A class that implements an interface of another node, and is loaded by that node when it starts. This is the *pluginlib* pattern of ROS 2, as used by the Nav2 planners and controllers. You describe it in a `.ros2` file and a `.rossystem` file. | This page |
 | **A RosTooling plugin** | A Java extension of RosTooling itself. It adds blocks to the model language, checks them, generates code for them and offers tools to editors and AI agents. | [Extension blocks](PluginBlocks.md), [Loading and trust](PluginLoading.md), [Writing a plugin](PluginDevelopment.md) |
 
+For a hands-on example that you build and run, see [Tutorial: ROS 2 plugins](Tutorial_Plugins.md).
+
 ## The parts of a plugin model
 
 | Term | Meaning | Keyword |
