@@ -23,7 +23,8 @@ This page lists what does not work as you might expect. Entries marked *fixed* s
 - arrays with a fixed size or an upper bound, see [Messages, services and actions](NewCommunicationObjects.md),
 - the `default:` of a system parameter, see [Systems](RosSystemModelDescription.md),
 - importing a node of the catalogue in the Studio, see [Catalogue](../vscode/catalogue.md),
-- the parameter file of a node with a namespace, see [System generation](CodeGeneration.md).
+- the parameter file of a node with a namespace, see [System generation](CodeGeneration.md),
+- completion of types, nodes and interfaces and hover text in the editor, see [Editing models](../vscode/editing-models.md).
 
 If a model with one of these is rejected as invalid, your RosTooling is older than the feature. See [What's new](WhatsNew.md) for the versions.
 

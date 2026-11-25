@@ -13,7 +13,7 @@ RosTooling is a Java core with several thin clients on top. All the knowledge ab
 
 **Generators.** The generators turn a validated model into files: C++ or Python wrappers for a node, and launch files and package files for a system. They take the target distribution into account, see [Code generation from a package model](Ros2CodeGeneration.md) and [Target distributions](TargetDistributions.md).
 
-**Language server.** The core runs as a language server (LSP) over standard input and output. Besides diagnostics, navigation and basic completion it offers commands for generation and for plugins, see [LSP commands](LspCommands.md).
+**Language server.** The core runs as a language server (LSP) over standard input and output. Besides completion, hover and diagnostics it offers commands for generation and for plugins, see [LSP commands](LspCommands.md).
 
 **Diagram server.** The same JAR can run as a GLSP server that builds the diagram of a model, lays it out and applies the edits you make in the diagram back to the text, see [Diagram server](GlspServer.md).
 

@@ -14,10 +14,24 @@ Every RosTooling file opens as text in a normal VS Code editor. The extension ad
 ## Features
 
 - **Highlighting.** Keywords, names, types, values and `@` blocks have their own colours, and brackets are matched.
-- **Completion.** Completion is limited today. The language server offers only the next syntax element, such as `node:`, `{` or `@`. It does not yet offer packages, interfaces or the message, service and action types of the workspace and the [catalogue](catalogue.md). Write those names in full, or choose them in the [Studio](studio.md), where the interface buttons of the component view and **Browse ROS Types** show the types that you can use. VS Code adds a suggestion list of words that are already in the file, which is not from RosTooling.
+- **Completion.** Press `Ctrl+Space` inside a quoted value. After `type: "` the editor lists the message, service and action types of the workspace and the [catalogue](catalogue.md), after `from: "` the nodes as `package.node`, and in a connection the interfaces as `node::interface`. Typing narrows the list. The list has at most 100 entries. VS Code does not show suggestions inside quotes while you type unless you ask for them with `Ctrl+Space`. Outside quotes the editor offers only the next syntax element, such as `node:` or `@`. Packages, artifacts and parameters are not completed.
 - **Validation.** Errors and warnings are underlined while you type and listed in the Problems view. Hover over an underline for the message. [Validation and diagnostics](../docu/Validation.md) lists what is checked.
-- **Hover text.** Hovering over an underline shows the message of the error or warning. Hover text for the elements of a model, such as the description of a keyword or a type, is not provided yet.
+- **Hover text.** Hovering over a node, an interface, a type or a package shows a short description, for example the fields of a message type. Hovering over an underline shows the message of the error or warning.
 - **Navigation.** `Ctrl` + click on a reference, such as an interface in a connection of a system, goes to its definition, also across files.
+
+```{image} images/completion.png
+:alt: The list of message types after typing part of a type name and pressing Ctrl+Space
+:width: 90%
+```
+
+```{image} images/hover.png
+:alt: The hover text of a node
+:width: 50%
+```
+
+:::{note}
+Completion of types, nodes and interfaces and the hover text need a RosTooling version that is newer than the current release. The server of the current release only offers the next syntax element and shows no hover text for model elements. At release: remove this note.
+:::
 
 ```{image} images/problems.png
 :alt: A reference that cannot be resolved is underlined in the editor and listed in the Problems view

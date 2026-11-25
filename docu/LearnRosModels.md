@@ -1,6 +1,6 @@
 # Review package models
 
-In this tutorial you write a small package model, `.ros2`, and meet the help that the editor gives: the naming rules, the error for a type that does not exist, and what happens with a grammar error. It takes about 15 minutes.
+In this tutorial you write a small package model, `.ros2`, and meet the help that the editor gives: the naming rules, the error for a type that does not exist, completion, and what happens with a grammar error. It takes about 15 minutes.
 
 **What you need:** the [VS Code extension](../vscode/overview.md). The message types come from the [catalogue](../vscode/catalogue.md), which the extension downloads when it starts. If you use Eclipse, the same models and messages apply; the tabs below show the differences.
 
@@ -50,7 +50,7 @@ my_component:
 
 The error is "Couldn't resolve reference to TopicSpec 'my_msgs_package/msg/String'": the type is not defined anywhere that RosTooling can see. The message also names two ways to fix it, to add the project that defines the type or to generate a `.ros` model for it, see [Communication objects](NewCommunicationObjects.md).
 
-To use an existing type, replace the text between the quotes by its full name, `std_msgs/msg/String`, and the error disappears. In Eclipse, press `Ctrl+Space` between the quotes to list the types of the catalogue. In VS Code the language server does not offer the types yet, the Studio lists them under **Browse ROS Types** in its component view. To see where a type is defined, put the cursor on it and use **Go to Definition** (`F12`, in Eclipse `F2`).
+To use an existing type, delete the text between the quotes and press `Ctrl+Space` there. The editor lists the types of the catalogue. Choose `std_msgs/msg/String` and the error disappears. (In VS Code this needs a RosTooling version that is newer than the current release. With the current release, write the full name, or choose the type in the Studio under **Browse ROS Types** in its component view.) To see where a type is defined, put the cursor on it and use **Go to Definition** (`F12`, in Eclipse `F2`).
 
 ## 4. A grammar error
 
