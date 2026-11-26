@@ -1,4 +1,4 @@
-# MCP server and agent skills
+# MCP server and tools
 
 This page is about the server and its tools. For what the skills do and what to ask the agent, see [Agent skills](agent-skills.md). For a worked example, see [Model an existing package with an agent](../docu/Tutorial_AgentModelling.md).
 
